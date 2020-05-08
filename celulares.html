@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Smartphones</title>
+  </head>
+
+<style>
+
+body{
+ font-family: Arial;
+ background-color: #005ce6;
+ background-size:100%;
+}
+
+input[type=model], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 15px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=brand], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 15px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=ram], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 15px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=memory], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 15px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 12px 100px;
+  margin: 5px 0;
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 20px;
+  float:right 7px;
+}
+button:hover {
+  background-color: #1aa3ff;
+}
+div.container {
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  padding: 50px;
+  border-bottom: 15px;
+}
+
+</style>
+
+<body>
+<h1>Smartphone Models</h1>
+<h2>Type Models Below &#128071;</h2>
+
+ <form name="Smartphone Models">
+
+  <div class="container">
+  <label for="fname">Model:</label>
+  <input type="model" id="model" placeholder="Type Here">
+
+
+  <label for="fname">Brand:</label>
+  <input type="brand" id="brand" placeholder="Type Here">
+
+
+  <label for="fname">RAM:</label>
+  <input type="ram" id="ram" placeholder="Type Here">
+
+
+  <label for="fname">Memory:</label>
+  <input type="memory" id="memory" placeholder="Type Here">
+
+  <button onclick="get()">Show&#129321;</button>
+  <button onclick="del()">Delete &#128561;</button>
+  <button onclick="put()">Put &#128579;</button>
+  <button onclick="post()">Post &#128526;</button>
+  </div>
+
+  <script type="text/javascript">
+
+
+    function get(){
+
+   var get = {};
+   get.model = document.getElementById("model").value;
+   get.brand = document.getElementById("brand").value;
+   get.ram = document.getElementById("ram").value;
+   get.memory = document.getElementById("memory").value;
+
+   alert("Mostrando Modelo \nModel: "+ get.model
+      + "\nBrand: "+ get.brand
+      + "\nRAM: "+ get.ram
+      + "\nMemory: "+ get.memory);
+    }
+    function del(){
+
+    var deletar = {};
+    deletar.model = document.getElementById("model").value;
+    deletar.brand = document.getElementById("brand").value;
+    deletar.ram = document.getElementById("ram").value;
+    deletar.memory = document.getElementById("memory").value;
+
+    alert("Deletado com Sucesso \nModel: "+ deletar.model
+      + "\nBrand: "+ deletar.brand
+      + "\nRAM: "+ deletar.ram
+      + "\nMemory: "+ deletar.memory);
+    }
+    function put(){
+
+    var atualizar = {};
+    atualizar.model = document.getElementById("model").value;
+    atualizar.brand = document.getElementById("brand").value;
+    atualizar.ram = document.getElementById("ram").value;
+    atualizar.memory = document.getElementById("memory").value;
+
+    alert("Atualizado com Sucesso \nModel: "+ atualizar.model
+      + "\nBrand: "+ atualizar.brand
+      + "\nRAM: "+ atualizar.ram
+      + "\nMemory: "+ atualizar.memory);
+    }
+    function post(){
+
+    var postar = {};
+    postar.model = document.getElementById("model").value;
+    postar.brand = document.getElementById("brand").value;
+    postar.ram = document.getElementById("ram").value;
+    postar.memory = document.getElementById("memory").value;
+
+      alert ("Postado com Sucesso \nModel: "+ postar.model
+      + "\nBrand: "+ postar.brand
+      + "\nRAM: "+ postar.ram
+      + "\nMemory: "+ postar.memory);
+    }
+
+      </script>
+    </form>
+  </body>
+</html>
